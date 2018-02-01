@@ -457,15 +457,16 @@ function BugForm() {
     var uploadLabel = $(".js-label-upload");
     var errorLabel = $(".js-error-upload");
 
+    uploadLabel.removeClass("visually-hidden");
+    uploadLabel.addClass("visually-hidden");
+
     // hide upload image errors (this will no-op if the user never saw one)
     $(".form-upload-error").remove();
 
     errorLabel.addClass("is-hidden");
-    uploadLabel.removeClass("visually-hidden");
 
     removeBanner.removeClass("is-hidden");
     removeBanner.attr("tabIndex", "0");
-    uploadLabel.addClass("visually-hidden");
     removeBanner.on(
       "click",
       _.bind(function() {

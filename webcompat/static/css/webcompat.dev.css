@@ -63,6 +63,10 @@
   visibility: hidden;
 }
 
+.form-upload:hover .visually-hidden {
+  visibility: hidden;
+}
+
 .right {
   float: right;
 }
